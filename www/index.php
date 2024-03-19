@@ -3,7 +3,7 @@
 require_once __DIR__ . '/../src/utils/init.php';
 
 
-$page = 'accueil';
+$page = 'home';
 
 if (isset($_GET['p'])) {
     if (in_array($_GET['p'], $existing_pages)) {
