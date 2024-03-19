@@ -4,7 +4,7 @@
 <body>
     <nav>
         <div>
-            <img src="/src/images/logo.svg" alt="">
+            <img src="<?=PROJECT_FOLDER ?>/src/images/logo.svg" alt="">
         </div>
 
         <div class="burger">
