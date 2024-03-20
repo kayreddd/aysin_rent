@@ -21,8 +21,6 @@
         <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
     </head>
     <body>
-        <!-- <?= $navbar ?> -->
+        <?= $navbar ?>
         <?= $page_content ?>
         <!-- <?= $footer ?> -->
-    </body>
-</html>
