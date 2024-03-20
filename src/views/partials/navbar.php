@@ -4,7 +4,7 @@
 <body>
     <nav>
         <div class="logo">
-            <img src="<?=PROJECT_FOLDER ?>/src/images/logo.svg" alt="">
+            <img class="image-clignote" src="<?=PROJECT_FOLDER ?>/src/images/logo.svg" alt="">
         </div>
 
         <div class="burger">

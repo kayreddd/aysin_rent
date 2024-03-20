@@ -64,3 +64,16 @@ transform: rotate(-45deg);
 stroke-dasharray: 20 300;
 stroke-dashoffset: -32.42;
 }
+
+.image-clignote  {
+    animation-duration: .4s;
+    animation-name: clignoter;
+    animation-iteration-count: 5;
+    transition: none;
+ }
+
+ @keyframes clignoter {
+   0%   { opacity:1; }
+   40%   {opacity:0; }
+   100% { opacity:1; }
+ }
