@@ -18,3 +18,5 @@
         </div>
     </nav>
 </body>
+<?php $navbar = ob_get_clean();
+?>
