@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="<?=PROJECT_FOLDER ?>www/css/product5.css">
         <link rel="stylesheet" href="<?=PROJECT_FOLDER ?>www/css/checkout.css">
         <link rel="stylesheet" href="<?=PROJECT_FOLDER ?>www/css/navbar.css">
+        <link rel="stylesheet" href="<?=PROJECT_FOLDER ?>www/css/footer.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
@@ -21,8 +22,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
     </head>
     <body>
-        <!-- <?= $navbar ?> -->
+        <?= $navbar ?>
         <?= $page_content ?>
-        <!-- <?= $footer ?> -->
+        <?= $footer ?>
     </body>
 </html>

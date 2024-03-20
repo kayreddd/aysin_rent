@@ -3,7 +3,7 @@
 
 <body>
     <nav>
-        <div>
+        <div class="logo">
             <img src="<?=PROJECT_FOLDER ?>/src/images/logo.svg" alt="">
         </div>
 
@@ -18,3 +18,5 @@
         </div>
     </nav>
 </body>
+
+<?php $navbar = ob_get_clean();?>
