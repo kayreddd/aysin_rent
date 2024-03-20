@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-family: 'Michroma';
+    color: white;
+    background: black;
+    cursor: none;
+    height: 500vh;
+}
+
+.custom-cursor{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    border-radius:50%;
+    background-color: blue;
+    pointer-events: none;
+    z-index: 99999;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.custom-cursor-before{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: grey;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    pointer-events: none;
+    transition: .2s ease;
+    opacity: 1;
+}
+
+p{
+    font-size: 48px;
+    text-align: center;
+    margin-top: 170px;
+}
+
+/* .feed1{
+    position: relative;
+    display: flex;
+    
+}
+
+.all-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.box1, .box2, .box3, .box4 {
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: space-evenly;
+
+} */
+
+.all-box {
+    position: relative;
+    margin-top: 360px;
+
+}
+
+.all-box {
+    /* background-image: url('<?=PROJECT_FOLDER ?>/src/images/feedProduct-P1.svg');
+    background-size: cover;
+    width: 100vw; */
+    /* position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column; */
+    /* position: relative; */
+    /* z-index: 1;
+    max-width: 1000px;
+    margin: 0 auto; */
+}
+
+/* .box1, .box2, .box3, .box4 {
+    
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 100px;
+    gap: 300px;
+}
+
+.box2, .box3, .box4{
+    padding-top: 200px;
+}
+
+.box3, .box4{
+    padding-top: 200px;
+} */
+
+/* .all-box {
+    position: relative;
+} */
+
+.button1 {
+    position: absolute;
+    top: 0;
+    padding-left: 19%;
+    margin-top: 400px;
+}
+
+
+
+.button1 a{
+    display: block;
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.button2 {
+    position: absolute;
+    top: 0;
+    padding-left: 68%;
+    margin-top: 400px;
+}
+
+.button2 button{
+    /* padding: 80 15px; */
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+}
+
+.button3 {
+    position: absolute;
+    top: 0;
+    padding-left: 19%;
+    margin-top: 870px;
+}
+
+.button3 button{
+    /* padding: 80 15px; */
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+}
+
+.button4 {
+    position: absolute;
+    top: 0;
+    padding-left: 68%;
+    margin-top: 870px;
+}
+
+.button4 button{
+    /* padding: 80 15px; */
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+}
+
+.button5 {
+    position: absolute;
+    top: 0;
+    padding-left: 19%;
+    margin-top: 1350px;
+}
+
+.button5 button{
+    /* padding: 80 15px; */
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+}
+
+.button6 {
+    position: absolute;
+    top: 0;
+    padding-left: 68%;
+    margin-top: 1355px;
+}
+
+.button6 button{
+    /* padding: 80 15px; */
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+}
+
+.button7 {
+    position: absolute;
+    top: 0;
+    padding-left: 19%;
+    margin-top: 1820px;
+}
+
+.button7 button{
+    /* padding: 80 15px; */
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+}
+
+.button8 {
+    position: absolute;
+    top: 0;
+    padding-left: 68%;
+    margin-top: 1820px;
+}
+
+.button8 button{
+    /* padding: 80 15px; */
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+}
