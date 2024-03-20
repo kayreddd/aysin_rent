@@ -24,5 +24,3 @@
         <?= $navbar ?>
         <?= $page_content ?>
         <!-- <?= $footer ?> -->
-    </body>
-</html>
