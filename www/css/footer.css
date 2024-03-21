@@ -42,7 +42,7 @@ footer li {
     padding-bottom: 15px;
 }
 
-li a {
+.footer_li a {
     text-decoration: none;
     color: white;
     opacity: 50%;
