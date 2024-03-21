@@ -12,11 +12,13 @@ ob_start(); ?>
 
         <div class="all-box">
             <img src="<?=PROJECT_FOLDER ?>/src/images/complete_cars.svg" alt="" width="100%">
+            <!-- URUS -->
             <div class="button1">
-                <a href="<?=PROJECT_FOLDER ?>www/?p=product1">Découvrir</a>
+                <a href="<?=PROJECT_FOLDER ?>">Découvrir</a>
             </div>
+            <!-- RANGE ROVER -->
             <div class="button2">
-                <button>Découvrir</button>
+                <a href="<?=PROJECT_FOLDER ?>www/?p=product1">Découvrir</a>
             </div>
             <div class="button3">
                 <button>Découvrir</button>
