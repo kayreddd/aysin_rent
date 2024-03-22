@@ -11,7 +11,7 @@ ob_start(); ?>
         <h1>QUEL VÉHICULE SOUHAITEZ-VOUS CONDUIRE ?</h1>
 
         <div class="all-box">
-            <img src="<?=PROJECT_FOLDER ?>/src/images/complete_cars.svg" alt="" width="100%">
+            <img style="padding-bottom: 150px;" src="<?=PROJECT_FOLDER ?>/src/images/complete_cars.svg" alt="" width="100%">
             <!-- URUS -->
             <div class="button1">
                 <a href="<?=PROJECT_FOLDER ?>">Découvrir</a>

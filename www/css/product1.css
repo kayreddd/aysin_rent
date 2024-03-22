@@ -10,12 +10,13 @@ body {
 }
 
 /* partie image de la voiture et infos box1  */
+
 .box_background_1 {
     position: relative;
     height: 45rem; 
 }
 
-.range1{
+.range1 {
     background: url('../../src/images/land-rover-range-rover-velar-20394-1 2.png') no-repeat center center;
     background-size: cover;
 }
@@ -36,13 +37,13 @@ body {
 
 }
 
-.all_block{
+.all_block {
     display: flex;
     flex-direction: column;
     gap: 4rem;
 }
 
-.info_car{
+.info_car {
     color: #ffffff;
     display: flex;
     flex-direction: column;
@@ -51,7 +52,7 @@ body {
     gap: 3rem;
 }
 
-.info1{
+.info1 {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -59,20 +60,20 @@ body {
     gap: 10rem;
 }
 
-.i1_2{
+.i1_2 {
     font-size: 12px;
     text-align: center;
 }
 
-.i1_1{
+.i1_1 {
     font-weight: bold;
     font-size: 18px;
 }
 
-.button_reserver{
+.button_reserver {
     color: black;
     background-color: #ffffff;
-    width: 250px;
+    width: 280px;
     height: 51px;
     border-radius: 1.5rem;
     font-size: 18px;
@@ -82,13 +83,15 @@ body {
     margin-top: 22px;
 
 }
-.button_reserver:hover{
+
+.button_reserver:hover {
     background-color: #c8ced4;
 }
-.text2{
+
+.text2 {
     color: white;
     text-align: center;
-    width: 35%;
+    width: 55%;
     font-size: 21px;
 }
 /* --------------------------------------------------------------------- */
@@ -99,11 +102,12 @@ body {
     height: 45rem; 
 }
 
-.range2{
+.range2 {
     background: url('../../src/images/2020_range_rover_velar_r-dynamic_black_6_1600x1200 1.png') no-repeat center center;
     background-size: cover;
 }
-.info_car2{
+
+.info_car2 {
     color: #ffffff;
     display: flex;
     flex-direction: column;
@@ -111,23 +115,26 @@ body {
     align-items: center;
     gap: 3rem;
 }
-.info2{
+
+.info2 {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 10rem;
 }
-.info_range2 .info2 .i1_1{
+
+.info_range2 .info2 .i1_1 {
     font-size: 15px;
     text-align: center;
 }
-.info_range2 .info2 .i1_2{
+
+.info_range2 .info2 .i1_2 {
     font-size: 23px;
     font-weight: bold;
 }
 
-.hour_info_box{
+.hour_info_box {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -135,7 +142,8 @@ body {
     width: 30%;
     flex-wrap: wrap;
 }
-.box_h{
+
+.box_h {
     background-color: #ffffff;
     color: black;
     font-size: 18px;
@@ -149,9 +157,9 @@ body {
     justify-content: center;
     border-radius: 20px;
     cursor: pointer;
-    
 }
-.box_h:hover{
+
+.box_h:hover {
     background-color: #c8ced4;
 }
 /* --------------------------------------------------------------------- */
@@ -165,11 +173,11 @@ body {
     justify-content: center;
 }
 
-.range3{
+.range3 {
     background: url('../../src/images/10299608lpw-10299614-jpg_4560091 1.png') no-repeat center center;
     background-size: cover;
 }
-.text3{
+.text3 {
     color: white;
     text-align: center;
     font-size: 37px;
@@ -177,21 +185,14 @@ body {
     z-index: 100;
     /* margin-top: 45px; */
 }
+
 .container_form {
     width: 80%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: flex-start;*/
 }
-
-/* .left-column,
-.right-column {
-    flex-basis: 45%;
-    margin-top: -64px;
-
-} */
 
 .input-group {
     margin-bottom: 15px;
@@ -205,11 +206,6 @@ body {
     width: 48%;
 }
 
-/* .input-group label {
-    display: block;
-    margin-bottom: 5px;
-} */
-
 .input-group input {
     width: 83%;
     padding: 21px;
@@ -221,7 +217,6 @@ body {
     color: #ffffff;
     -webkit-appearance: none; /* Désactive le style par défaut de certains navigateurs */
     background-clip: padding-box; /* Assurez-vous que le fond ne s'étend pas à travers la bordure */
-
 }
 
 .input-group input::placeholder{
@@ -243,15 +238,14 @@ body {
     cursor: pointer;
     justify-content: center;
     font-weight: bold;
-    
 }
 
 .button_next_to_paiement:hover {
     background-color: #c8ced4;
 }
-.formulaire_produit{
+
+.formulaire_produit {
     display: flex;
     flex-direction: column;
     z-index: 100;
-    /* padding-top: 11rem; */
 }
