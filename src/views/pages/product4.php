@@ -5,7 +5,7 @@ ob_start();
 ?>
 <body>
     <main>
-        <div class="all_block">
+        <div class="all_block" style="padding-bottom: 150px;">
             <div class="box_background_1 merco_gt63s_1">
                 <div class="text1">MERCEDES-BENZ GT63S</div>
             </div>
@@ -28,7 +28,7 @@ ob_start();
                         <div class="i1_2">BOITE DE VITESSE</div>
                     </div>
                 </div>
-                <button class="button_reserver">Réservez maintenant</button>
+                <button class="button_reserver">RÉSERVEZ MAINTENANT</button>
                 <div class="text2">
                 Montez à bord de la Mercedes-Benz GT63S et éprouvez immédiatement la sensation excitante d’être assis dans un habitable racé et élégant.</div>
             </div>
@@ -54,7 +54,7 @@ ob_start();
                 </div>
             </div>
             <div class="box_background_3 merco_gt63s_3">
-                <div class="text3">RESERVEZ LE MAINTENANT</div>
+                <div class="text3">RÉSERVEZ LE MAINTENANT</div>
                 <form action="" class="formulaire_produit">
                     <div class="container_form">
                     <div class="input-group">

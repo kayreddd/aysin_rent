@@ -5,7 +5,7 @@ ob_start();
 ?>
 <body>
     <main>
-        <div class="all_block">
+        <div class="all_block" style="padding-bottom: 150px;">
             <div class="box_background_1 urus1">
                 <div class="text1">LAMBORGHINI URUS SCATENATO</div>
             </div>
@@ -28,7 +28,7 @@ ob_start();
                         <div class="i1_2">BOITE DE VITESSE</div>
                     </div>
                 </div>
-                <button class="button_reserver">Réservez maintenant</button>
+                <button class="button_reserver">RÉSERVEZ MAINTENANT</button>
                 <div class="text2">
                 Limité à 99 exemplaires, l'Urus Scatenato promet d'être à la hauteur de son nom, en libérant un mélange de performance et d'exclusivité.
                 </div>
@@ -55,7 +55,7 @@ ob_start();
                 </div>
             </div>
             <div class="box_background_3 urus3">
-                <div class="text3">RESERVEZ LE MAINTENANT</div>
+                <div class="text3">RÉSERVEZ LE MAINTENANT</div>
                 <form action="" class="formulaire_produit">
                     <div class="container_form">
                     <div class="input-group">

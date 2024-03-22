@@ -162,8 +162,10 @@ body {
 .box_h:hover {
     background-color: #c8ced4;
 }
+
 /* --------------------------------------------------------------------- */
 /* CSS du formulaire */
+
 .box_background_3{
     position: relative;
     height: 51rem; 
@@ -183,7 +185,6 @@ body {
     font-size: 37px;
     font-weight: bold;
     z-index: 100;
-    /* margin-top: 45px; */
 }
 
 .container_form {
@@ -228,7 +229,7 @@ body {
 .button_next_to_paiement {
     display: flex;
     margin-top: 20px;
-    margin-left: 47rem;
+    margin-left: 37rem;
     width: 250px;
     padding: 18px;
     background-color: white;

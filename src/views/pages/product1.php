@@ -5,8 +5,8 @@ ob_start();
 ?>
 <body>
     <main>
-        <div class="all_block">
-            <div class="box_background_1 range1" style="padding-bottom: 150px;">
+        <div class="all_block" style="padding-bottom: 150px;">
+            <div class="box_background_1 range1">
                 <div class="text1">RANGE ROVER VELAR</div>
             </div>
             <div class="info_car range_car">
@@ -55,7 +55,7 @@ ob_start();
                 </div>
             </div>
             <div class="box_background_3 range3">
-                <div class="text3">RESERVEZ LE MAINTENANT</div>
+                <div class="text3">RÉSERVEZ LE MAINTENANT</div>
                 <form action="" class="formulaire_produit">
                     <div class="container_form">
                         <!-- <div class="left-column"> -->
