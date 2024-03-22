@@ -8,7 +8,7 @@ ob_start(); ?>
 <body>
     <?php require_once __DIR__ . '/../partials/navbar.php'; ?>
     <main>
-        <p>QUEL VÉHICULE SOUHAITEZ-VOUS CONDUIRE ?</p>
+        <h1>QUEL VÉHICULE SOUHAITEZ-VOUS CONDUIRE ?</h1>
 
         <div class="all-box">
             <img src="<?=PROJECT_FOLDER ?>/src/images/complete_cars.svg" alt="" width="100%">
