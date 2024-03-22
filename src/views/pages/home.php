@@ -9,13 +9,24 @@ ob_start(); ?>
     <?php require_once __DIR__ . '/../partials/navbar.php'; ?>
     <main>
         <div class="container">
-            <video autoplay loop muted width="1440" height="623" class="bg-clip">
+            <video id="myVideo" autoplay muted width="1440" height="623" class="bg-clip">
                 <source src="<?=PROJECT_FOLDER ?>/src/images/lightSignature.mp4" type="video/mp4">
             </video>
+
             <div class="content">
                 <p style="color: white;">Ne vous privez plus du plaisir de conduire les meilleures<br> voitures du moment.</p>
             </div>
         </div>
+
+        <script>
+           document.addEventListener('DOMContentLoaded', function() {
+                const video = document.getElementById('myVideo');
+
+                video.addEventListener('ended', function() {
+                    video.pause(); // Mettre en pause la vidéo à la fin
+                });
+            });
+        </script>
 
         <div class="btn-home">
             <a href="<?=PROJECT_FOLDER ?>www/?p=feedProduct">Réservez Maintenant</a>

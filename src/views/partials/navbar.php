@@ -4,7 +4,7 @@
     <nav>
         <div class="logo">
         <a href="<?=PROJECT_FOLDER ?>www/?p=home">
-            <img src="<?= PROJECT_FOLDER ?>/src/images/logo.svg" alt="">
+            <img class="image-clignote" src="<?= PROJECT_FOLDER ?>/src/images/logo.svg" alt="">
         </a>
         </div>
 
