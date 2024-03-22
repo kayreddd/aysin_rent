@@ -38,15 +38,15 @@ ob_start(); ?>
 
         <img src="<?=PROJECT_FOLDER ?>/src/images/rs3_home.svg" alt="" width="100%">
 
-        <img src="<?=PROJECT_FOLDER ?>/src/images/border_left.svg" alt="" style="padding-left: 80px; padding-top: 150px;">
+        <img style="padding-left: 180px; padding-top: 150px;" src="<?=PROJECT_FOLDER ?>/src/images/border_left.svg" alt="">
 
         <div class="conditions">
             <p style="padding-bottom: 70px;">21 ans minimum</p>
             <p style="padding-bottom: 70px;">2 ans de permis minimum</p>
-            <p style="padding-bottom: 70px; margin-bottom: -85px">100km offerts</p>
+            <p style="padding-bottom: 70px; margin-bottom: -150px">100km offerts</p>
         </div>
 
-        <img style="padding-left: 927px; margin-bottom: 400px;" src="<?=PROJECT_FOLDER ?>/src/images/border_right.svg" alt="">
+        <img style="padding-left: 827px; margin-bottom: 400px;" src="<?=PROJECT_FOLDER ?>/src/images/border_right.svg" alt="">
 
         <div class="title2">
             <p>NOS AVIS CLIENTS</p>

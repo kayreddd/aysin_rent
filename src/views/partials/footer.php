@@ -7,9 +7,9 @@
             <p>NOS SERVICES</p>
 
             <ul>
-                <li><a href="">Rejoignez-nous</a></li>
-                <li><a href="">Services personnalisées</a></li>
-                <li><a href="">Offres d'emploi</a></li>
+                <li><a style="text-decoration: none; color: white; opacity: 50%;" href="">Rejoignez-nous</a></li>
+                <li><a style="text-decoration: none; color: white; opacity: 50%;" href="">Services personnalisées</a></li>
+                <li><a style="text-decoration: none; color: white; opacity: 50%;" href="">Offres d'emploi</a></li>
             </ul>
         </div>
 

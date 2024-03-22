@@ -6,7 +6,7 @@ ob_start();
 <body>
     <main>
         <div class="all_block">
-            <div class="box_background_1 range1">
+            <div class="box_background_1 range1" style="padding-bottom: 150px;">
                 <div class="text1">RANGE ROVER VELAR</div>
             </div>
             <div class="info_car range_car">
@@ -28,7 +28,7 @@ ob_start();
                         <div class="i1_2">BOITE DE VITESSE</div>
                     </div>
                 </div>
-                <button class="button_reserver">Réservez maintenant</button>
+                <button class="button_reserver">RÉSERVEZ MAINTENANT</button>
                 <div class="text2">
                     Le design avant-gardiste du Range Rover Velar, avec ses éléments soignés et raffinés, est à la fois intriguant et séduisant.
                 </div>
@@ -70,16 +70,6 @@ ob_start();
                                 <input type="text" placeholder="ANCIENNETE DE PERMIS" id="input8" name="input8">
                                 <input type="text" placeholder="DATE D'ARRIVEE" id="input9" name="input9">
                             </div>
-                        <!-- </div> -->
-
-                        <!-- <div class="right-column">
-                            <div class="input-group">
-                                <input type="text" placeholder="PRENOM" id="input6" name="input6">
-                                <input type="text" placeholder="NUMERO DE TELEPHONE" id="input7" name="input7">
-                                <input type="text" placeholder="ANCIENNETE DE PERMIS" id="input8" name="input8">
-                                <input type="text" placeholder="DATE D'ARRIVEE" id="input9" name="input9">
-                            </div>
-                        </div> -->
                     </div>
                     <div class="">
                         <button type="submit" class="button_next_to_paiement">PASSER AU PAIEMENT</button>
