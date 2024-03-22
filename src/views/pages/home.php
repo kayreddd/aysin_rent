@@ -17,6 +17,10 @@ ob_start(); ?>
             </div>
         </div>
 
+        <div class="btn-home">
+            <a href="<?=PROJECT_FOLDER ?>www/?p=feedProduct">Réservez Maintenant</a>
+        </div>
+        
         <div class="title1">
             <p>Louez uniquement les meilleurs voitures du moment</p>
         </div>
