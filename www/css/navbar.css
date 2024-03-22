@@ -73,6 +73,7 @@ nav {
     text-align: center;
     padding-left: 20px;
     display: none; /* Caché par défaut */
+    z-index: 99999;
 }
 
 .menu ul {
@@ -100,3 +101,15 @@ nav {
 .hamburger input:checked ~ .menu {
     display: block;
 }
+
+.image-clignote  {
+    animation-duration: .3s;
+    animation-name: clignoter;
+    animation-iteration-count: 5;
+    transition: none;
+ }
+ @keyframes clignoter {
+   0%   { opacity:1; }
+   40%   {opacity:0; }
+   100% { opacity:1; }
+ }
