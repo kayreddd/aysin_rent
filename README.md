@@ -1,1 +1,0 @@
-# aysin_rent
