@@ -11,10 +11,11 @@
         <link rel="stylesheet" href="<?=PROJECT_FOLDER ?>www/css/product3.css">
         <link rel="stylesheet" href="<?=PROJECT_FOLDER ?>www/css/product4.css">
         <link rel="stylesheet" href="<?=PROJECT_FOLDER ?>www/css/product5.css">
+        <link rel="stylesheet" href="<?=PROJECT_FOLDER ?>www/css/myInformations.css">
+        <link rel="stylesheet" href="<?=PROJECT_FOLDER ?>www/css/changeMdp.css">
         <link rel="stylesheet" href="<?=PROJECT_FOLDER ?>www/css/checkout.css">
         <link rel="stylesheet" href="<?=PROJECT_FOLDER ?>www/css/navbar.css">
         <link rel="stylesheet" href="<?=PROJECT_FOLDER ?>www/css/footer.css">
-        <link rel="stylesheet" href="<?=PROJECT_FOLDER ?>www/css/myInformations.css">
         <link rel="stylesheet" href="<?=PROJECT_FOLDER ?>www/css/navbar_profil.css">
         <link rel="stylesheet" href="<?=PROJECT_FOLDER ?>www/css/historical.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,7 +27,6 @@
     </head>
     <body>
         <?= $navbar ?>
-        <?= $navbar_profil ?>
         <?= $page_content ?>
         <?= $footer ?>
     </body>

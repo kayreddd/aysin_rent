@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-family: 'Michroma';
+    color: white;
+    background: black;
+    cursor: none;
+    height: 500vh;
+}
+
+main h3 {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.custom-cursor{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 8px;
+    height: 8px;
+    border-radius:50%;
+    background-color: #1025E8;
+    pointer-events: none;
+    z-index: 99999;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.custom-cursor-before{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: transparent;
+    border: 1px solid white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    pointer-events: none;
+    transition: .2s ease;
+    opacity: 1;
+}
+
+
+/* MAIN */
+
+.case_name {
+    border: 1px solid white;
+    max-width: 100px;
+    padding: 15px 150px;
+}
+
+.case_first_name {
+    border: 1px solid white;
+    max-width: 100px;
+    padding: 15px 150px;    
+}
+
+.block_info1 {
+    display: flex;
+    justify-content: center;
+    gap: 180px;
+    padding-bottom: 80px;
+}
+
+.block_all_info p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    padding-bottom: 10px;
+}
+
+.case_mail {
+    border: 1px solid white;
+    max-width: 100px;
+    padding: 15px 150px;
+}
+
+.block_info2 {
+    display: flex;
+    justify-content: center;
+    gap: 180px;
+    padding-bottom: 80px;
+}
+
+.block_all_info {
+    margin-top: 100px;
+}
+
+.case_dob1 {
+    border: 1px solid white;
+    max-width: 100px;
+    padding: 15px 49px;
+}
+
+.case_dob2{
+    border: 1px solid white;
+    max-width: 100px;
+    padding: 15px 49px;
+}
+
+.case_dob3{
+    border: 1px solid white;
+    max-width: 100px;
+    padding: 15px 49px;
+}
+
+.block_case_dob {
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+}
+
+.block_save {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 200px;
+}
+
+.btn_save {
+    padding: 10px 30px;
+    border-radius: 40px;
+    border: none;
+}
