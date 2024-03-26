@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-family: 'Michroma';
+    color: white;
+    background: black;
+    cursor: none;
+    height: 500vh;
+}
+
+.custom-cursor{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 8px;
+    height: 8px;
+    border-radius:50%;
+    background-color: #1025E8;
+    pointer-events: none;
+    z-index: 99999;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.custom-cursor-before{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: transparent;
+    border: 1px solid white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    pointer-events: none;
+    transition: .2s ease;
+    opacity: 1;
+}
+
+main h1 {
+    font-size: 48px;
+    text-align: center;
+    margin-top: 170px;
+}
+
+.all-box {
+    position: relative;
+    margin-top: 360px;
+
+}
+
+.button1 {
+    position: absolute;
+    top: 0;
+    padding-left: 69%;
+    margin-top: 400px;
+}
+
+.button1 a {
+    display: block;
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.button2 {
+    position: absolute;
+    top: 0;
+    padding-left: 19%;
+    margin-top: 400px;
+}
+
+.button2 button {
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.button3 {
+    position: absolute;
+    top: 0;
+    padding-left: 19%;
+    margin-top: 870px;
+}
+
+.button3 button {
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+}
+
+.button4 {
+    position: absolute;
+    top: 0;
+    padding-left: 68%;
+    margin-top: 870px;
+}
+
+.button4 button {
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+}
+
+.button5 {
+    position: absolute;
+    top: 0;
+    padding-left: 19%;
+    margin-top: 1350px;
+}
+
+.button5 button {
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+}
+
+.button6 {
+    position: absolute;
+    top: 0;
+    padding-left: 68%;
+    margin-top: 1355px;
+}
+
+.button6 button {
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+}
+
+.button7 {
+    position: absolute;
+    top: 0;
+    padding-left: 19%;
+    margin-top: 1820px;
+}
+
+.button7 button {
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+}
+
+.button8 {
+    position: absolute;
+    top: 0;
+    padding-left: 68%;
+    margin-top: 1820px;
+}
+
+.button8 button {
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+}
