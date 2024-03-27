@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Monetserrat', sans-serif;
+    background-color: #ffffff;
+}
+/*-------- CSS CASE INSCRIPTION -------- */
+.case2_register{
+    height: 90vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 12rem;
+}
+/* form case connexion */
+.form-box_register {
+    width: 403px;
+    height: 733px ;
+    background: #f1f7fe;
+    overflow: hidden;
+    border-radius: 15px;
+    border: 2px solid #ccc;
+    color: #010101;
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    background-color: black;
+    
+}
+.form_register {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 32px 24px 24px;
+    gap: 1px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+/*Form text*/
+.title_register {
+    font-size: 32px;
+    color: white;
+    margin-bottom: 45px;
+
+}
+ /*Inputs box*/
+.input-container_register {
+    position: relative;
+}
+.input-container_register input, .info_years_register input {
+    background-color: white;
+    padding: 11px;
+    padding-right: 1rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    width: 300px;
+    border-radius: 14px;
+    box-shadow: none;
+    outline: none;
+    border: 1.5px solid #e5e7eb;
+    margin: 8px 0;
+}
+.input-container_register input, .info_years_register input{
+    font-size: 14px;
+    color: black;
+}
+ /*Button*/
+ .button_register {
+    background-color: #1025E8;
+    color: #fff;
+    border: 0;
+    border-radius: 7px;
+    display: flex;
+    padding: 13px 30px 13px 30px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color .3s ease;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+} 
+.button_register:hover {
+    background-color: #091bbc;
+}
+.register_link{
+    color: white;
+}
+.button_register a {
+    text-decoration: none;
+}
+/* select année page register */
+.info_years_register{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 12px;
+}
+.info_years_register select{
+    width: 5.7rem;
+    padding: 1rem;
+    padding-right: 8px;
+}
+/*autre moyen de connexion */
+.other_connex_register p{
+    font-size: 12px;
+    color: white;
+}
+.other_connex_register {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    align-items: center;
+    gap: 13px;
+    
+}
+
+.other_connex_register a {
+    text-decoration: none;
+}
+.other_connex_register i {
+    width: 50px;
+    height: auto;
+    /* margin: 5px; */
+    cursor: pointer;
+}
+.logo_connex_register{
+    font-size: 30px;
+    gap: 20px;
+}
+.form-section_register {
+    font-size: .85rem;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    padding: 0;
+    margin-top: 28px;
+}
+  
+.form-section_register a {
+    font-weight: bold;
+    color: #1025E8;
+    transition: color .3s ease;
+    text-decoration: none;
+    font-size: 14px;
+}
+.form-section_register p {
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+
+}
+  
+.form-section_register a:hover {
+    color: #091bbc;
+    text-decoration: none;
+}

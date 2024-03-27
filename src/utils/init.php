@@ -7,7 +7,7 @@ require_once __DIR__ . '/common.php';
 require_once __DIR__ . '/db.php';
 
 // Configuration du site
-$existing_pages = ['home', 'feedProduct', 'product1', 'product2', 'product3', 'product4', 'product5', 'checkout'];
+$existing_pages = ['home', 'feedProduct', 'product1', 'product2', 'product3', 'product4', 'product5', 'checkout','login','register'];
 
 // Les classes
 

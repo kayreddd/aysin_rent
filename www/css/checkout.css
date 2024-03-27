@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Monetserrat', sans-serif;
+    background-color: #ffffff;
+}
+/* partie image du background et du slogan  */
+
+.box_background_car_checkout {
+    position: relative;
+    height: 32rem; 
+    background: url('../../src/images/cars_background.png') no-repeat center center;
+    background-size: cover;
+}
+.title_slogan_checkout{
+    text-align: center;
+    font-size: 44px;
+    font-weight: bold;
+    padding-top: 108px;
+}
+.all_block_checkout{
+    
+}
+.form-box_checkout{
+    width: 700px;
+    height: 600px;
+    background: #f1f7fe;
+    overflow: hidden;
+    border-radius: 15px;
+    border: 2px solid #ccc;
+    color: #010101;
+}
