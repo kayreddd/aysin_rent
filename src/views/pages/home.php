@@ -23,7 +23,7 @@ ob_start(); ?>
                 const video = document.getElementById('myVideo');
 
                 video.addEventListener('ended', function() {
-                    video.pause(); // Mettre en pause la vidéo à la fin
+                    video.pause();
                 });
             });
         </script>
