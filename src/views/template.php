@@ -14,6 +14,8 @@
         <link rel="stylesheet" href="<?=PROJECT_FOLDER ?>www/css/myInformations.css">
         <link rel="stylesheet" href="<?=PROJECT_FOLDER ?>www/css/changeMdp.css">
         <link rel="stylesheet" href="<?=PROJECT_FOLDER ?>www/css/checkout.css">
+        <link rel="stylesheet" href="<?=PROJECT_FOLDER ?>www/css/login.css">
+        <link rel="stylesheet" href="<?=PROJECT_FOLDER ?>www/css/register.css">
         <link rel="stylesheet" href="<?=PROJECT_FOLDER ?>www/css/navbar.css">
         <link rel="stylesheet" href="<?=PROJECT_FOLDER ?>www/css/footer.css">
         <link rel="stylesheet" href="<?=PROJECT_FOLDER ?>www/css/navbar_profil.css">
