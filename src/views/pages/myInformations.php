@@ -13,7 +13,11 @@ ob_start(); ?>
             <img class="image_profil" src="<?=PROJECT_FOLDER ?>/src/images/2024-bmw-i5-edrive40-interior-106-646d15f7ee204 1.svg" alt="" width="100%">
         </div>
 
+            
+
         <h3>MES INFORMATIONS</h3>
+
+        <?php require_once __DIR__ . '/../partials/navbar_profil.php'; ?>
 
         <div class="block_all_info">
             <div class="block_info1">
@@ -45,6 +49,10 @@ ob_start(); ?>
                 <button class="btn_save">ENREGISTRER</button>
             </div>
         </div>
+
+        <div class="custom-cursor"></div>
+        <div class ="custom-cursor-before"></div>
+
     </main>
 </body>
 
