@@ -9,9 +9,12 @@ ob_start(); ?>
     <?php require_once __DIR__ . '/../partials/navbar.php'; ?>
 
     <main>
-        <div class="img_profil">
+        
+        <!-- <div class="img_profil">
             <img class="image_profil" src="<?=PROJECT_FOLDER ?>/src/images/2024-bmw-i5-edrive40-interior-106-646d15f7ee204 1.svg" alt="" width="100%">
-        </div>
+        </div> -->
+
+        <?php require_once __DIR__ . '/../partials/navbar_profil.php'; ?>
 
         <h4>CHANGER MON MOT DE PASSE</h4>
 
@@ -36,6 +39,10 @@ ob_start(); ?>
                 </div>
             </div>
         </div>
+
+        <div class="custom-cursor"></div>
+        <div class ="custom-cursor-before"></div>
+
     </main>
 </body>
 

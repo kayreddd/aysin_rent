@@ -10,7 +10,6 @@
         <link rel="stylesheet" href="<?=PROJECT_FOLDER ?>www/css/product2.css">
         <link rel="stylesheet" href="<?=PROJECT_FOLDER ?>www/css/product3.css">
         <link rel="stylesheet" href="<?=PROJECT_FOLDER ?>www/css/product4.css">
-        <link rel="stylesheet" href="<?=PROJECT_FOLDER ?>www/css/product5.css">
         <link rel="stylesheet" href="<?=PROJECT_FOLDER ?>www/css/myInformations.css">
         <link rel="stylesheet" href="<?=PROJECT_FOLDER ?>www/css/changeMdp.css">
         <link rel="stylesheet" href="<?=PROJECT_FOLDER ?>www/css/checkout.css">
@@ -29,7 +28,10 @@
     </head>
     <body>
         <?= $navbar ?>
+        <?= $navbar_profil ?>
         <?= $page_content ?>
         <?= $footer ?>
     </body>
+
+    <script src="<?=PROJECT_FOLDER ?>www/js/main.js"></script>
 </html>
