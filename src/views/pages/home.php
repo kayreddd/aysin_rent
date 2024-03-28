@@ -14,7 +14,7 @@ ob_start(); ?>
             </video>
 
             <div class="content">
-                <p style="color: white;">Ne vous privez plus du plaisir de conduire les meilleures<br> voitures du moment.</p>
+                <p>Ne vous privez plus du plaisir de conduire les meilleures<br> voitures du moment.</p>
             </div>
         </div>
 
@@ -38,15 +38,19 @@ ob_start(); ?>
 
         <img src="<?=PROJECT_FOLDER ?>/src/images/rs3_home.svg" alt="" width="100%">
 
-        <img style="padding-left: 180px; padding-top: 150px;" src="<?=PROJECT_FOLDER ?>/src/images/border_left.svg" alt="">
-
-        <div class="conditions">
-            <p style="padding-bottom: 70px;">21 ans minimum</p>
-            <p style="padding-bottom: 70px;">2 ans de permis minimum</p>
-            <p style="padding-bottom: 70px; margin-bottom: -150px">100km offerts</p>
+        <div class="border-left">
+            <img src="<?=PROJECT_FOLDER ?>/src/images/border_left.svg" alt="">
         </div>
 
-        <img style="padding-left: 827px; margin-bottom: 400px;" src="<?=PROJECT_FOLDER ?>/src/images/border_right.svg" alt="">
+        <div class="conditions">
+            <p>21 ans minimum</p>
+            <p>2 ans de permis minimum</p>
+            <p class="condition3">100km offerts</p>
+        </div>
+
+        <div class="border-right">
+            <img src="<?=PROJECT_FOLDER ?>/src/images/border_right.svg" alt="">
+        </div>
 
         <div class="title2">
             <p>NOS AVIS CLIENTS</p>
