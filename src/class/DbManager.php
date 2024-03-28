@@ -104,6 +104,7 @@ class DbManager {
         $req = $this->db->prepare($sql.' WHERE v_id=:id');
         $req->execute($data);
     }
+    
     function updateCommande(string $tableName, array $data) {
         $sql = 'UPDATE '.$tableName.' SET date_maj = NOW(), ';
         foreach($data as $clef => $value){

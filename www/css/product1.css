@@ -38,6 +38,7 @@ body {
 }
 
 .all_block {
+.all_block {
     display: flex;
     flex-direction: column;
     gap: 4rem;
@@ -53,6 +54,7 @@ body {
 }
 
 .info1 {
+.info1 {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -61,18 +63,22 @@ body {
 }
 
 .i1_2 {
+.i1_2 {
     font-size: 12px;
     text-align: center;
 }
 
+.i1_1 {
 .i1_1 {
     font-weight: bold;
     font-size: 18px;
 }
 
 .button_reserver {
+.button_reserver {
     color: black;
     background-color: #ffffff;
+    width: 280px;
     width: 280px;
     height: 51px;
     border-radius: 1.5rem;
@@ -85,12 +91,17 @@ body {
 }
 
 .button_reserver:hover {
+
+.button_reserver:hover {
     background-color: #c8ced4;
 }
 
 .text2 {
+
+.text2 {
     color: white;
     text-align: center;
+    width: 55%;
     width: 55%;
     font-size: 21px;
 }
@@ -117,6 +128,8 @@ body {
 }
 
 .info2 {
+
+.info2 {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -125,15 +138,20 @@ body {
 }
 
 .info_range2 .info2 .i1_1 {
+
+.info_range2 .info2 .i1_1 {
     font-size: 15px;
     text-align: center;
 }
+
+.info_range2 .info2 .i1_2 {
 
 .info_range2 .info2 .i1_2 {
     font-size: 23px;
     font-weight: bold;
 }
 
+.hour_info_box {
 .hour_info_box {
     display: flex;
     flex-direction: row;
@@ -142,6 +160,8 @@ body {
     width: 30%;
     flex-wrap: wrap;
 }
+
+.box_h {
 
 .box_h {
     background-color: #ffffff;
@@ -158,6 +178,8 @@ body {
     border-radius: 20px;
     cursor: pointer;
 }
+
+.box_h:hover {
 
 .box_h:hover {
     background-color: #c8ced4;
@@ -186,6 +208,7 @@ body {
     font-weight: bold;
     z-index: 100;
 }
+
 
 .container_form {
     width: 80%;
@@ -226,6 +249,7 @@ body {
     color: #929292;
 }
 
+
 .button_next_to_paiement {
     display: flex;
     margin-top: 20px;
@@ -244,6 +268,8 @@ body {
 .button_next_to_paiement:hover {
     background-color: #c8ced4;
 }
+
+.formulaire_produit {
 
 .formulaire_produit {
     display: flex;
