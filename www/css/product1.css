@@ -17,7 +17,7 @@ body {
 }
 
 .range1 {
-    background: url('../../src/images/land-rover-range-rover-velar-20394-1 2.png') no-repeat center center;
+    /* background: url('../../src/images/land-rover-range-rover-velar-20394-1 2.png') no-repeat center center; */
     background-size: cover;
 }
 
@@ -145,6 +145,10 @@ body {
 .info2 .i2 .i1_2 {
     font-size: 23px;
     font-weight: bold;
+}
+
+.info1 .i3 .i1_1, .info1 .i4 .i1_1 {
+    text-transform: uppercase;
 }
 
 .hour_info_box {

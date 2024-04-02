@@ -164,4 +164,12 @@ class DbManager {
         }
         return $mdpMatch;
     }
+
+    //recup les infos de chaque voiture de la page produit
+    function getCarsBDD(string $carPage){
+        $pdoStatement = $this->db->prepare('SELECT * FROM car WHERE pages = :pages');
+        $pdoStatement->bindParam(':pages', $carPage);
+        $pdoStatement->execute();
+        return $pdoStatement->fetchAll();
+    }
 }
