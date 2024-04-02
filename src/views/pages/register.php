@@ -2,30 +2,40 @@
 $page = "register";
 $title = "Aysin Rent - L'agence de location d'excellence";
 ob_start(); 
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    if(isset($_POST["email"])){
+        //appel de la fonction insertion dans DbManager
+        $BDD->insertUserInfoRegister($_POST["lastName"], $_POST["firstName"], $_POST["email"], $_POST["dateOfBirth"], $_POST["mdp"]);
+
+        header("Location: /aysin_rent/www/?p=login");
+    }
+}
+
 ?>
 <body>
     <main>
         <div class="case2_register">
             <div class="form-box_register">
-                <form class="form_register">
+                <form class="form_register" method="post" >
                     <span class="title_register">Inscription</span>
                     
                     <div class="input-container_register">
-                        <input type="text" placeholder="Nom">
+                        <input type="text" placeholder="Nom" name="lastName">
                     </div>
                     <div class="input-container_register">
-                        <input type="text" placeholder="Prénom">
+                        <input type="text" placeholder="Prénom" name="firstName">
                     </div>
                     <div class="input-container_register">
-                        <input type="email" placeholder="Adresse e-mail">
+                        <input type="email" placeholder="Adresse e-mail" name="email">
                     </div>
                     <div class="info_years_register">
-                        <input type="date" placeholder="Adresse e-mail">
+                        <input type="date" placeholder="Date de naissance" name="dateOfBirth">
                     </div>
                     <div class="input-container_register">
-                        <input type="password" placeholder="Mot de passe">
+                        <input type="password" placeholder="Mot de passe" name="mdp">
                     </div>
-                    <button class="button_register"><a href="#" class="register_link">S'inscrire</button>
+                    <button type="submit" class="button_register">S'inscrire</button>
                     <div class="other_connex_register">
                         <p>Ou avec</p>
                         <div class="logo_connex_register">
