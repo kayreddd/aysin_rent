@@ -29,6 +29,7 @@ ob_start();
                     </div>
                 </div>
                 <button class="button_reserver">RÉSERVEZ MAINTENANT</button>
+                <button class="button_reserver">RÉSERVEZ MAINTENANT</button>
                 <div class="text2">
                     Le design avant-gardiste du Range Rover Velar, avec ses éléments soignés et raffinés, est à la fois intriguant et séduisant.
                 </div>
