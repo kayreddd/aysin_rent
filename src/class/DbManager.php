@@ -133,7 +133,6 @@ class DbManager {
         $pdoStatement->execute();
     }
 
-    
 // function pour insérer dans la bdd et function pour gérer connexion
     function insertUserInfoRegister(string $nom, string $prenom, string $email, string $dateOfBirth, string $mdp){
         $pdoStatement = $this->db->prepare('INSERT INTO user (first_name, last_name, email, mdp, date_of_birth) VALUES (:first_name, :last_name, :email, :mdp, :date_of_birth)');
