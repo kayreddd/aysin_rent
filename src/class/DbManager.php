@@ -104,6 +104,7 @@ class DbManager {
         $req = $this->db->prepare($sql.' WHERE v_id=:id');
         $req->execute($data);
     }
+    
     function updateCommande(string $tableName, array $data) {
         $sql = 'UPDATE '.$tableName.' SET date_maj = NOW(), ';
         foreach($data as $clef => $value){
@@ -131,7 +132,8 @@ class DbManager {
         $pdoStatement->bindParam(':email', $email, PDO::PARAM_STR);
         $pdoStatement->execute();
     }
-    // function pour insérer dans la bdd et function pour gérer connexion
+
+// function pour insérer dans la bdd et function pour gérer connexion
     function insertUserInfoRegister(string $nom, string $prenom, string $email, string $dateOfBirth, string $mdp){
         $pdoStatement = $this->db->prepare('INSERT INTO user (first_name, last_name, email, mdp, date_of_birth) VALUES (:first_name, :last_name, :email, :mdp, :date_of_birth)');
         $pdoStatement->bindParam(':first_name', $prenom, PDO::PARAM_STR);
