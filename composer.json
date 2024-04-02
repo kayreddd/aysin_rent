@@ -1,0 +1,17 @@
+{
+    "name": "inesb/aysin_rent",
+    "autoload": {
+        "psr-4": {
+            "Inesb\\AysinRent\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Inès Berehili",
+            "email": "ines.berehili@icloud.com"
+        }
+    ],
+    "require": {
+        "stripe/stripe-php": "^13.16"
+    }
+}

@@ -4,6 +4,7 @@ $title = "Aysin Rent - L'agence de location d'excellence";
 ob_start(); 
 ?>
 <body>
+    
     <main>
         <div class="all_block" style="padding-bottom: 150px;">
             <div class="box_background_1 range1">
@@ -47,7 +48,7 @@ ob_start();
                     </div>
                 </div>
                 <div class="hour_info_box">
-                    <div class="box_h">24H</div>
+                    <div class="box_h"><a href="https://buy.stripe.com/test_7sI5kX9l6fJe21GdQQ">24H</a></div>
                     <div class="box_h">48H</div>
                     <div class="box_h">72H</div>
                     <div class="box_h">96H</div>
