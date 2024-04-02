@@ -54,5 +54,6 @@ ob_start();
         <div class ="custom-cursor-before"></div>
 
     </main>
+    
 </body>
 <?php $page_content = ob_get_clean();

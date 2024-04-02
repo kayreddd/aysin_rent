@@ -2,7 +2,6 @@
 
 require_once __DIR__ . '/../src/utils/init.php';
 
-
 $page = 'home';
 
 if (isset($_GET['p'])) {
