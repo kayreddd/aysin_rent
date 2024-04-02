@@ -132,4 +132,37 @@ class DbManager {
         $pdoStatement->bindParam(':email', $email, PDO::PARAM_STR);
         $pdoStatement->execute();
     }
+
+    
+// function pour insérer dans la bdd et function pour gérer connexion
+    function insertUserInfoRegister(string $nom, string $prenom, string $email, string $dateOfBirth, string $mdp){
+        $pdoStatement = $this->db->prepare('INSERT INTO user (first_name, last_name, email, mdp, date_of_birth) VALUES (:first_name, :last_name, :email, :mdp, :date_of_birth)');
+        $pdoStatement->bindParam(':first_name', $prenom, PDO::PARAM_STR);
+        $pdoStatement->bindParam(':last_name', $nom, PDO::PARAM_STR);
+        $pdoStatement->bindParam(':email', $email, PDO::PARAM_STR);
+        $pdoStatement->bindParam(':date_of_birth', $dateOfBirth);
+        $pdoStatement->bindParam(':mdp', $mdp, PDO::PARAM_STR);
+        $pdoStatement->execute();
+    }
+
+    function loginUser(string $email, string $mdp){
+        //on recup le mdp dans la bdd associé à l'email donné
+        $pdoStatement = $this->db->prepare('SELECT mdp FROM user WHERE email = :email ');
+        $pdoStatement->bindParam(':email', $email, PDO::PARAM_STR);
+        $pdoStatement->execute();
+
+        //variable booleen qui sera true ou false si le mdp de la bdd match avec le mdp donné
+        $mdpMatch=false;
+
+        //on recup le résultat de la requete executé pour mettre dans la variable $result
+        while($result=$pdoStatement->fetch(PDO::FETCH_ASSOC)){
+            $mdp_bdd=$result["mdp"]; //on stock la valeur de la colonne mdp du tableau $result
+            if($mdp_bdd == $mdp){
+                $mdpMatch=true;
+            }else{
+                $mdpMatch=false;
+            }
+        }
+        return $mdpMatch;
+    }
 }

@@ -137,16 +137,21 @@ body {
     gap: 10rem;
 }
 
-.info_range2 .info2 .i1_1 {
-
-.info_range2 .info2 .i1_1 {
-    font-size: 15px;
+/* infos partie gauche */
+.info2 .i1 .i1_1 {
+    font-size: 12px;
     text-align: center;
 }
-
-.info_range2 .info2 .i1_2 {
-
-.info_range2 .info2 .i1_2 {
+.info2 .i1 .i1_2 {
+    font-size: 23px;
+    font-weight: bold;
+}
+/* infos partie droite */
+.info2 .i2 .i1_1{
+    font-size: 12px;
+    text-align: center;
+}
+.info2 .i2 .i1_2 {
     font-size: 23px;
     font-weight: bold;
 }

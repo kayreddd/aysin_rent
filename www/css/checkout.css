@@ -22,15 +22,120 @@ body {
     font-weight: bold;
     padding-top: 108px;
 }
-.all_block_checkout{
-    
+.below_boxes{
+    display: flex;
+    flex-direction: row;
+    gap : 10rem;
+    margin-top: 5rem;
+    padding-left: 2rem;
 }
 .form-box_checkout{
     width: 700px;
     height: 600px;
-    background: #f1f7fe;
+    background: #010101;
     overflow: hidden;
     border-radius: 15px;
     border: 2px solid #ccc;
-    color: #010101;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.title_paiement{
+    border-bottom: #ffffff 1px solid;
+    padding-bottom: 5px;
+    color: #ffffff;
+    margin: 1rem;
+}
+
+.form_checkout{
+    margin-top: 5.5rem;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 56%;
+    position: relative;
+    left: 22%;
+    gap: 1.6rem;
+}
+
+.form_input1{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.form_checkout input {
+    height: 2.5rem;
+    border: 1px solid #ffffff;
+    background-color: #010101;
+    padding: 10px;
+    border-radius: 5px;
+} 
+
+.checkbox_checkout_page label{
+    color: #ffffff;
+    margin-left: 10px;
+}
+
+.checkbox_checkout_page {
+    align-items: center;
+    display: flex;
+}
+
+.input-container_cb_checkout{
+    width: 100%;
+}
+
+.input-container_cb_checkout input{
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.input-container_cb_month_checkout{
+    display: flex;
+    gap: 1.4rem;
+}
+
+.button_payer{
+    color: #ffffff;
+    width: 100%;
+    height: 2rem;
+    background-color: #1025E8;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+}
+.button_payer:hover{
+    background-color: #091bbc;
+}
+
+.politique_info_commande{
+    font-size: 10px;
+    color: #ffffff;
+}
+/* box récapitulatif */
+.recap_box{
+    width: 500px;
+    height: 500px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    background: #010101;
+    overflow: hidden;
+    border-radius: 15px;
+    border: 2px solid #ccc;
+}
+
+.info-recap{
+    margin-top: 5.5rem;
+    display: flex;
+}
+.car_choice_name{
+    font-weight: bold;
+    padding-left: 17px;
+
 }
