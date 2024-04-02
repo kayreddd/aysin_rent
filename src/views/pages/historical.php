@@ -46,6 +46,10 @@ ob_start(); ?>
                 <p>MASTERCARD</p>
             </div>
         </div>
+
+        <div class="custom-cursor"></div>
+        <div class ="custom-cursor-before"></div>
+
     </main>
 </body>
 

@@ -22,7 +22,7 @@
             <ul>
                 <li><a href="<?=PROJECT_FOLDER ?>www/?p=home">Accueil</a></li>
                 <li><a href="<?=PROJECT_FOLDER ?>www/?p=feedProduct">Véhicules</a></li>
-                <li><a href="<?=PROJECT_FOLDER ?>www/?p=about_us">À propos</a></li>
+                <li><a href="<?=PROJECT_FOLDER ?>www/?p=login">Connexion</a></li>
                 <li><a href="<?=PROJECT_FOLDER ?>www/?p=contact">Contact</a></li>
             </ul>
         </div>
