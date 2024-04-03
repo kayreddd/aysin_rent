@@ -1,12 +1,28 @@
 <?php
 $page = "login";
 $title = "Aysin Rent - L'agence de location d'excellence";
+
+//empeche l'utilisateur connecté d'aller sur la page login
+if (isset($_SESSION['user_id']))
+{
+    header("Location: /aysin_rent/www/?p=feedProduct");
+    die();
+}
 ob_start(); 
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if(isset($_POST["email"])){
-        if($BDD->loginUser($_POST["email"], $_POST["mdp"]) == true){
-            header("Location: /aysin_rent/www/?p=home");
+        $info_user = $BDD->loginUser($_POST["email"], $_POST["mdp"]);//on vérifie si l'utilisateur existe en bdd et la fonction nous retourne l'user_id et le nom stocké dans la bdd
+        if(count($info_user) > 0){ //si il y a au moins un élément du tableau
+            $_SESSION["user_id"] = $info_user[0];
+            $_SESSION["name"] = $info_user[1];
+            if(isset($_SESSION["car_page"])){ //si l'utilisateur s'inscrit et était sur la page produit on le redirige sur cette page après connexion
+                $header = "Location: /aysin_rent/www/?p=" . $_SESSION["car_page"];
+                header($header);
+
+            }else{
+                 header("Location: /aysin_rent/www/?p=feedProduct");
+            }
         }else{
            echo "Email ou mot de passe incorrects"; 
         }

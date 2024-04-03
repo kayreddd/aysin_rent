@@ -146,23 +146,23 @@ class DbManager {
 
     function loginUser(string $email, string $mdp){
         //on recup le mdp dans la bdd associé à l'email donné
-        $pdoStatement = $this->db->prepare('SELECT mdp FROM user WHERE email = :email ');
+        $pdoStatement = $this->db->prepare('SELECT user_id, first_name, mdp FROM user WHERE email = :email ');
         $pdoStatement->bindParam(':email', $email, PDO::PARAM_STR);
         $pdoStatement->execute();
 
-        //variable booleen qui sera true ou false si le mdp de la bdd match avec le mdp donné
-        $mdpMatch=false;
+        //tableau qui va contenir l'id et le nom de l'utilisateur
+        $userInfo = [];
 
         //on recup le résultat de la requete executé pour mettre dans la variable $result
         while($result=$pdoStatement->fetch(PDO::FETCH_ASSOC)){
             $mdp_bdd=$result["mdp"]; //on stock la valeur de la colonne mdp du tableau $result
             if($mdp_bdd == $mdp){
-                $mdpMatch=true;
+                array_push($userInfo, $result["user_id"], $result["first_name"]) ;//on ajoute l'id et le nom de l'utilisateur dans le tableai créer avant
             }else{
-                $mdpMatch=false;
+                $userInfo=[];
             }
         }
-        return $mdpMatch;
+        return $userInfo;
     }
 
     //recup les infos de chaque voiture de la page produit

@@ -14,14 +14,14 @@ ob_start(); ?>
             <img style="padding-bottom: 150px;" src="<?=PROJECT_FOLDER ?>/src/images/complete_cars.svg" alt="" width="100%">
             <!-- URUS -->
             <div class="button1">
-                <a href="<?=PROJECT_FOLDER ?>www/?p=product2">Découvrir</a>
+                <a href="<?=PROJECT_FOLDER ?>www/?p=urus">Découvrir</a>
             </div>
             <!-- RANGE ROVER -->
             <div class="button2">
-                <a href="<?=PROJECT_FOLDER ?>www/?p=product1">Découvrir</a>
+                <a href="<?=PROJECT_FOLDER ?>www/?p=range">Découvrir</a>
             </div>
             <div class="button3">
-                <a href="<?=PROJECT_FOLDER ?>www/?p=product3">Découvrir</a>
+                <a href="<?=PROJECT_FOLDER ?>www/?p=rs3">Découvrir</a>
             </div>
             <div class="button4">
                 <a href="<?=PROJECT_FOLDER ?>www/?p=product">Découvrir</a>
@@ -30,7 +30,7 @@ ob_start(); ?>
                 <a href="<?=PROJECT_FOLDER ?>www/?p=product4">Découvrir</a>
             </div>
             <div class="button6">
-                <a href="<?=PROJECT_FOLDER ?>www/?p=product5">Découvrir</a>
+                <a href="<?=PROJECT_FOLDER ?>www/?p=gt63s">Découvrir</a>
             </div>
             <div class="button7">
                 <button>Découvrir</button>
