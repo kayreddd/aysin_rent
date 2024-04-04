@@ -14,7 +14,7 @@ ob_start();
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if(isset($_POST["email"])){
         //appel de la fonction insertion dans DbManager
-        $BDD->insertUserInfoRegister($_POST["lastName"], $_POST["firstName"], $_POST["email"], $_POST["dateOfBirth"], $_POST["mdp"]);
+        print($BDD->insertUserInfoRegister($_POST["lastName"], $_POST["firstName"], $_POST["email"], $_POST["dateOfBirth"], $_POST["mdp"]));
 
         header("Location: /aysin_rent/www/?p=login");
     }

@@ -29,14 +29,12 @@ if($page == 'urus' || $page =='gt63s' || $page == 'rs3'){
         width: 100%;
         height: 100%;
         background-color: rgba(0, 0, 0, 0.459);
-        /* background-color: rgba(0, 0, 0, 0.3);  */
     }
     </style>';
 }
 
 ?>
 <body>
-    
     <main>
         <?php foreach ($infoCars as $row){?>
             <!-- chargement des images en bdd de chaque voiture -->
@@ -94,14 +92,94 @@ if($page == 'urus' || $page =='gt63s' || $page == 'rs3'){
                         <div class="i1_2"><?php echo $row["bail"] ?>e</div>
                     </div>
                 </div>
-                <div class="hour_info_box">
-                    <div class="box_h"><a href="https://buy.stripe.com/test_7sI5kX9l6fJe21GdQQ">24H</a></div>
-                    <div class="box_h">48H</div>
-                    <div class="box_h">72H</div>
-                    <div class="box_h">96H</div>
-                    <div class="box_h">1 SEMAINE</div>
-                    <div class="box_h">1 MOIS</div>
-                </div>
+                
+                <?php 
+                if (!isset($_SESSION['user_id'])) {
+                    echo '<div class="hour_info_box">
+                            <div class="box_h">24H</div>
+                            <div class="box_h">48H</div>
+                            <div class="box_h">72H</div>
+                            <div class="box_h">96H</div>
+                            <div class="box_h">1 SEMAINE</div>
+                            <div class="box_h">1 MOIS</div>
+                        </div>';
+                    } else {
+                    if ($page == 'range') {
+                        echo '<div class="hour_info_box">
+                                <div class="box_h"><a href="https://buy.stripe.com/test_fZebLFaoU2221K83cc">24H</a></div>
+                                <div class="box_h"><a href="https://buy.stripe.com/test_5kA3f9gNi8qqewUdQR">48H</a></div>
+                                <div class="box_h"><a href="https://buy.stripe.com/test_bIYaHBfJeayygF26oq">72H</a></div>
+                                <div class="box_h"><a href="https://buy.stripe.com/test_4gw5nh9kQ3661K8fZ1">96H</a></div>
+                                <div class="box_h"><a href="https://buy.stripe.com/test_bIY2b540w9uu4Wk148">1 SEMAINE</a></div>
+                                <div class="box_h"><a href="https://buy.stripe.com/test_7sI171aoUcGGgF27sx">1 MOIS</a></div>
+                            </div>';
+                    } elseif ($page == 'urus') {
+                        echo '<div class="hour_info_box">
+                                <div class="box_h"><a href="https://buy.stripe.com/test_fZeeXRbsY6ii1K84gm">24H</a></div>
+                                <div class="box_h"><a href="https://buy.stripe.com/test_eVa4jd7cI7mmfAY4gn">48H</a></div>
+                                <div class="box_h"><a href="https://buy.stripe.com/test_6oEaHBdB6fSS4WkbIQ">72H</a></div>
+                                <div class="box_h"><a href="https://buy.stripe.com/test_9AQ2b5fJe4aafAYcMV">96H</a></div>
+                                <div class="box_h"><a href="https://buy.stripe.com/test_9AQ4jd9kQ8qq74s7sC">1 SEMAINE</a></div>
+                                <div class="box_h"><a href="https://buy.stripe.com/test_7sIdTN0Ok9uu9cA4gr">1 MOIS</a></div>
+                            </div>';
+                    } elseif ($page == 'rs3') {
+                        echo '<div class="hour_info_box">
+                                <div class="box_h"><a href="https://buy.stripe.com/test_cN21719kQ0XY0G414g">24H</a></div>
+                                <div class="box_h"><a href="https://buy.stripe.com/test_4gwaHB40weOO74s6oB">48H</a></div>
+                                <div class="box_h"><a href="https://buy.stripe.com/test_6oE02X0Ok0XY3SgbIW">72H</a></div>
+                                <div class="box_h"><a href="https://buy.stripe.com/test_dR6eXR7cI0XY88w28n">96H</a></div>
+                                <div class="box_h"><a href="https://buy.stripe.com/test_28o6rlgNi8qq88w14k">1 SEMAINE</a></div>
+                                <div class="box_h"><a href="https://buy.stripe.com/test_8wM2b5cx2ayy74s8wN">1 MOIS</a></div>
+                            </div>';
+                    } elseif ($page == 'gt63s') {
+                        echo '<div class="hour_info_box">
+                                <div class="box_h"><a href="https://buy.stripe.com/test_9AQ5nhbsY366bkIdR8">24H</a></div>
+                                <div class="box_h"><a href="https://buy.stripe.com/test_00g8zt9kQ4aa1K828r">48H</a></div>
+                                <div class="box_h"><a href="https://buy.stripe.com/test_00g5nh68E8qq4Wk4gA">72H</a></div>
+                                <div class="box_h"><a href="https://buy.stripe.com/test_3cs5nhcx2eOO2OcbJ3">96H</a></div>
+                                <div class="box_h"><a href="https://buy.stripe.com/test_bIY8zt0Ok2224Wk6oK">1 SEMAINE</a></div>
+                                <div class="box_h"><a href="https://buy.stripe.com/test_cN2bLF54A5eebkIbJ5">1 MOIS</a></div>
+                            </div>';
+                    } elseif ($page == 'rs7') {
+                        echo '<div class="hour_info_box">
+                                <div class="box_h"><a href="https://buy.stripe.com/test_cN25nhdB6ayydsQaF2">24H</a></div>
+                                <div class="box_h"><a href="https://buy.stripe.com/test_bIYaHBgNiayy0G48wV">48H</a></div>
+                                <div class="box_h"><a href="https://buy.stripe.com/test_6oEg1V7cIayybkI4gG">72H</a></div>
+                                <div class="box_h"><a href="https://buy.stripe.com/test_9AQ2b5dB67mmdsQ28z">96H</a></div>
+                                <div class="box_h"><a href="https://buy.stripe.com/test_8wM2b5gNiayy88w14w">1 SEMAINE</a></div>
+                                <div class="box_h"><a href="https://buy.stripe.com/test_4gwg1VeFagWWagEaF7">1 MOIS</a></div>
+                            </div>';
+                    } elseif ($page == 'x6') {
+                        echo '<div class="hour_info_box">
+                                <div class="box_h"><a href="https://buy.stripe.com/test_6oE171gNi7mmbkIeVo">24H</a></div>
+                                <div class="box_h"><a href="https://buy.stripe.com/test_28o3f9fJe7mm60o00v">48H</a></div>
+                                <div class="box_h"><a href="https://buy.stripe.com/test_3cseXR54AdKK2OcbJe">72H</a></div>
+                                <div class="box_h"><a href="https://buy.stripe.com/test_00g6rl0OkfSScoMeVr">96H</a></div>
+                                <div class="box_h"><a href="https://buy.stripe.com/test_00g3f9gNieOO9cA3cK">1 SEMAINE</a></div>
+                                <div class="box_h"><a href="https://buy.stripe.com/test_bIYcPJ40weOO0G414D">1 MOIS</a></div>
+                            </div>';
+                    } elseif ($page == 'g63s') {
+                        echo '<div class="hour_info_box">
+                                <div class="box_h"><a href="https://buy.stripe.com/test_bIYg1Vcx28qq88w5kU">24H</a></div>
+                                <div class="box_h"><a href="https://buy.stripe.com/test_5kAeXR2WsayybkI5kV">48H</a></div>
+                                <div class="box_h"><a href="https://buy.stripe.com/test_28o171bsY222bkIbJk">72H</a></div>
+                                <div class="box_h"><a href="https://buy.stripe.com/test_8wMbLFbsYcGGbkIeVx">96H</a></div>
+                                <div class="box_h"><a href="https://buy.stripe.com/test_9AQ6rleFagWW88waFi">1 SEMAINE</a></div>
+                                <div class="box_h"><a href="https://buy.stripe.com/test_cN28zteFa366agE9Bf">1 MOIS</a></div>
+                            </div>';
+                    } elseif ($page == 'camaro') {
+                        echo '<div class="hour_info_box">
+                                <div class="box_h"><a href="https://buy.stripe.com/test_bIY3f9dB636688w28O">24H</a></div>
+                                <div class="box_h"><a href="https://buy.stripe.com/test_8wM02X9kQfSScoM14L">48H</a></div>
+                                <div class="box_h"><a href="https://buy.stripe.com/test_7sI3f968EeOO3Sg4gY">72H</a></div>
+                                <div class="box_h"><a href="https://buy.stripe.com/test_bIYbLF68EfSSagE00J">96H</a></div>
+                                <div class="box_h"><a href="https://buy.stripe.com/test_4gw7vp0Ok0XY1K814O">1 SEMAINE</a></div>
+                                <div class="box_h"><a href="https://buy.stripe.com/test_14kdTN68E5ee2Oc3cX">1 MOIS</a></div>
+                            </div>';
+                    }
+                }
+                ?>
+
             </div>
             <?php }?>
             <div class="box_background_3 voiture3">
