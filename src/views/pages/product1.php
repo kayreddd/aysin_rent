@@ -19,7 +19,7 @@ if(!isset($_SESSION["user_id"])){
 $infoCars = $BDD->getCarsBDD($page);
 
 //adaptation filtre sombre image 3
-if($page == 'urus' || $page =='gt63s' || $page == 'rs3'){
+if($page == 'urus' || $page =='gt63s' || $page == 'rs3' || $page == 'rs7' || $page == 'x6' || $page == 'g63s' || $page == 'camaro'){
     echo '<style>
     .voiture3::before {
         content: "";
