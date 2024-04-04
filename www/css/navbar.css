@@ -113,3 +113,15 @@ nav {
    40%   {opacity:0; }
    100% { opacity:1; }
  }
+ .statut_connexion{
+    color: white;
+    font-size: 15px;
+ }
+
+.rightSide{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    gap: 20px;
+}

@@ -1,6 +1,14 @@
 <?php
 $page = "register";
 $title = "Aysin Rent - L'agence de location d'excellence";
+
+//empeche l'utilisateur connecté d'aller sur la page register
+if (isset($_SESSION['user_id']))
+{
+    header("Location: /aysin_rent/www/?p=feedProduct");
+    die();
+}
+
 ob_start(); 
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -47,7 +55,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     
                 </form>
                 <div class="form-section_register">
-                <p>Déjà un compte ? <a href=""> Connectez-vous</a></p>
+                <p>Déjà un compte ? <a href="<?=PROJECT_FOLDER ?>www/?p=login"> Connectez-vous</a></p>
                 </div>
             </div>
         </div>

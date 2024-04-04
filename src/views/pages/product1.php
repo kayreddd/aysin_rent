@@ -3,6 +3,17 @@ $page = $_GET["p"];
 $title = "Aysin Rent - L'agence de location d'excellence";
 ob_start(); 
 
+//recup du nom de la page voiture au cas où l'utilisateur appuie sur "Reserver"
+if(!isset($_SESSION["user_id"])){
+    $url = basename($_SERVER['PHP_SELF']);
+    $query = $_SERVER['QUERY_STRING'];
+    if($query){
+        $carPage = substr($query, 2);
+    }
+
+    $_SESSION["car_page"] = $carPage;
+}
+
 //fonction recup donnée par rapport à $page
 
 $infoCars = $BDD->getCarsBDD($page);
@@ -94,26 +105,31 @@ if($page == 'urus' || $page =='gt63s' || $page == 'rs3'){
             </div>
             <?php }?>
             <div class="box_background_3 voiture3">
-                <div class="text3">RÉSERVEZ LE MAINTENANT</div>
-                <form action="" class="formulaire_produit">
+                <!-- afficher le bouton "Reserver" lorsque l'utilisateur n'est pas connecté -->
+                <?php if(!isset($_SESSION["user_id"])){
+                    echo '<div class="reserver_vite">N\'attendez plus pour réserver </div>
+                    <a class="reserve_the_car" href="' . PROJECT_FOLDER . 'www/?p=register">RÉSERVEZ</a>';
+                }?>
+                
+                <!-- <div class="text3">RÉSERVEZ LE MAINTENANT</div> -->
+                <!-- <form action="" class="formulaire_produit">
                     <div class="container_form">
-                        <!-- <div class="left-column"> -->
-                            <div class="input-group">
-                                <input type="text" placeholder="NOM" id="input1" name="input1">
-                                <input type="text" placeholder="ADRESSE EMAIL" id="input2" name="input2">
-                                <input type="text" placeholder="DATE DE NAISSANCE" id="input3" name="input3">
-                                <input type="text" placeholder="DATE DE DEPART" id="input4" name="input4">
-                                <input type="text" placeholder="SELECTIONNER UN MODELE" id="input5" name="input5">
-                                <input type="text" placeholder="PRENOM" id="input6" name="input6">
-                                <input type="text" placeholder="NUMERO DE TELEPHONE" id="input7" name="input7">
-                                <input type="text" placeholder="ANCIENNETE DE PERMIS" id="input8" name="input8">
-                                <input type="text" placeholder="DATE D'ARRIVEE" id="input9" name="input9">
-                            </div>
+                        <div class="input-group">
+                            <input type="text" placeholder="NOM" id="input1" name="input1">
+                            <input type="text" placeholder="ADRESSE EMAIL" id="input2" name="input2">
+                            <input type="text" placeholder="DATE DE NAISSANCE" id="input3" name="input3">
+                            <input type="text" placeholder="DATE DE DEPART" id="input4" name="input4">
+                            <input type="text" placeholder="SELECTIONNER UN MODELE" id="input5" name="input5">
+                            <input type="text" placeholder="PRENOM" id="input6" name="input6">
+                            <input type="text" placeholder="NUMERO DE TELEPHONE" id="input7" name="input7">
+                            <input type="text" placeholder="ANCIENNETE DE PERMIS" id="input8" name="input8">
+                            <input type="text" placeholder="DATE D'ARRIVEE" id="input9" name="input9">
+                        </div>
                     </div>
                     <div class="">
                         <button type="submit" class="button_next_to_paiement">PASSER AU PAIEMENT</button>
                     </div>
-                </form>
+                </form> -->
             </div>
         </div>
 

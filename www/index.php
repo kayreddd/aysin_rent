@@ -3,6 +3,7 @@
 require_once __DIR__ . '/../src/utils/init.php';
 
 $page = 'home';
+session_start(); //demarrage de la session sur tout le site
 
 if (isset($_GET['p'])) {
     if (in_array($_GET['p'], $existing_pages)) {
