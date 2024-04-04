@@ -34,6 +34,7 @@
                 <?php 
                 if(isset($_SESSION["user_id"]))
                 { ?>
+                <li><a href="<?=PROJECT_FOLDER ?>www/?p=historical">Profil</a></li>
                 <li><a href="<?=PROJECT_FOLDER ?>src/utils/logout.php">Se déconnecter</a></li>
                 <?php }
                 else { ?>
