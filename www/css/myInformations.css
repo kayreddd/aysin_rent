@@ -55,12 +55,14 @@ main h3 {
     border: 1px solid white;
     max-width: 100px;
     padding: 15px 150px;
+    border-radius: 3px;
 }
 
 .case_first_name {
     border: 1px solid white;
     max-width: 100px;
-    padding: 15px 150px;    
+    padding: 15px 150px;
+    border-radius: 3px;    
 }
 
 .block_info1 {
@@ -80,6 +82,7 @@ main h3 {
     border: 1px solid white;
     max-width: 100px;
     padding: 15px 150px;
+    border-radius: 3px;
 }
 
 .block_info2 {
@@ -97,18 +100,21 @@ main h3 {
     border: 1px solid white;
     max-width: 100px;
     padding: 15px 49px;
+    border-radius: 3px;
 }
 
 .case_dob2{
     border: 1px solid white;
     max-width: 100px;
     padding: 15px 49px;
+    border-radius: 3px;
 }
 
 .case_dob3{
     border: 1px solid white;
     max-width: 100px;
     padding: 15px 49px;
+    border-radius: 3px;
 }
 
 .block_case_dob {

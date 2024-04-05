@@ -135,17 +135,13 @@ class DbManager {
 
 // function pour insérer dans la bdd et function pour gérer connexion
     function insertUserInfoRegister(string $nom, string $prenom, string $email, string $dateOfBirth, string $mdp){
-        try {
-            $pdoStatement = $this->db->prepare('INSERT INTO user (first_name, last_name, email, mdp, date_of_birth) VALUES (:first_name, :last_name, :email, :mdp, :date_of_birth)');
-            $pdoStatement->bindParam(':first_name', $prenom, PDO::PARAM_STR);
-            $pdoStatement->bindParam(':last_name', $nom, PDO::PARAM_STR);
-            $pdoStatement->bindParam(':email', $email, PDO::PARAM_STR);
-            $pdoStatement->bindParam(':date_of_birth', $dateOfBirth);
-            $pdoStatement->bindParam(':mdp', $mdp, PDO::PARAM_STR);
-            $pdoStatement->execute();
-        }catch(Exception $e){
-            print($e);
-        }
+        $pdoStatement = $this->db->prepare('INSERT INTO user (first_name, last_name, email, mdp, date_of_birth) VALUES (:first_name, :last_name, :email, :mdp, :date_of_birth)');
+        $pdoStatement->bindParam(':first_name', $prenom, PDO::PARAM_STR);
+        $pdoStatement->bindParam(':last_name', $nom, PDO::PARAM_STR);
+        $pdoStatement->bindParam(':email', $email, PDO::PARAM_STR);
+        $pdoStatement->bindParam(':date_of_birth', $dateOfBirth);
+        $pdoStatement->bindParam(':mdp', $mdp, PDO::PARAM_STR);
+        $pdoStatement->execute();
     }
 
     function loginUser(string $email, string $mdp){

@@ -18,15 +18,7 @@ ob_start(); ?>
             </div>
         </div>
 
-        <script>
-           document.addEventListener('DOMContentLoaded', function() {
-                const video = document.getElementById('myVideo');
-
-                video.addEventListener('ended', function() {
-                    video.pause();
-                });
-            });
-        </script>
+        <script src="<?=PROJECT_FOLDER ?>www/js/home_video.js"></script>
 
         <div class="btn-home">
             <a href="<?=PROJECT_FOLDER ?>www/?p=feedProduct">Réservez Maintenant</a>

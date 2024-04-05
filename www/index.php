@@ -8,9 +8,9 @@ session_start(); //demarrage de la session sur tout le site
 if (isset($_GET['p'])) {
     if (in_array($_GET['p'], $existing_pages)) {
         $page = $_GET['p'];
-    } else if( in_array($_GET['p'], $car_pages)){ //pointe sur product1.php si on tape le nom d'une voiture
+    } else if (in_array($_GET['p'], $car_pages)){ //pointe sur product1.php si on tape le nom d'une voiture
        $page = "product1";
-    }else {
+    } else {
         $page = '404';
     }
 }
