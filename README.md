@@ -3,6 +3,8 @@
 ## Description
 AYSIN RENT est un site web qui permet aux utilisateurs de louer une voiture parmi un large choix de véhicule.
 
+Vous y retrouverez un catalogue de plusieurs modèle de véhicules avec tout les détails renseignés dessus.
+
 Langages utilisés : PHP, HTML,CSS, MySQL, JavaScript, Ajax
 
 ## Démarrage
